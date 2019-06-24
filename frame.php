@@ -32,15 +32,18 @@
 
             <link href="./default.css" rel="stylesheet">
         </head>    
-        <body class="skin-blue" data-bismillahauth="<?=GetSession("bismillahauth")?>">
+        <body class="black" data-bismillahauth="<?=GetSession("bismillahauth")?>">
             <!-- header logo: style can be found in header.less -->
             <audio id="wrapAudioNotif">
                 <source type="audio/mpeg" src="./uploaded/tone/notif.mp3"></source>
             </audio>
             <header class="header">
-                <a rel="nofollow" class="logo">
+                <a href="http://kab-sumedang.atrbpn.go.id/" rel="nofollow" class="logo"  >
                     <!-- Add the class icon to your logo image or logo icon to add the margining -->
-                    SPPD
+                    <img width=20 height=26 src='images/bpn.png'/>
+                    SPPD BPN
+
+                   
                 </a>
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top" role="navigation" style="text-align:center"> 

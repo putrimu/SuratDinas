@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 30, 2019 at 10:08 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.4
+-- Generation Time: Mar 21, 2017 at 10:24 AM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -313,10 +311,7 @@ INSERT INTO `sc_config_log` (`Id`, `LogTable`, `LogWaktu`, `LogCrud`, `LogKetera
 (109, 'username', '2017-01-28 15:59:11', 'edit', NULL, '::1', 'admin', 'UPDATE username  set FullName = \'lapakcode.net\' , Password = \'772b0c2974cfb52801d48d79a44131e2e73025380005\' , Foto = \'./uploaded/profile/admin.jpg\'  WHERE UserName = \'admin\''),
 (110, 'username', '2017-01-28 16:01:00', 'edit', NULL, '::1', 'admin', 'UPDATE username  set LastLogin = \'2017-01-28 04:00:59\'  WHERE UserName = \'admin\' and Password like \'772b0c2974cfb52801d48d79a44131e2e7302538%\''),
 (111, 'username', '2017-03-21 16:20:19', 'edit', NULL, '::1', 'admin', 'UPDATE username  set LastLogin = \'2017-03-21 04:20:19\'  WHERE UserName = \'admin\' and Password like \'772b0c2974cfb52801d48d79a44131e2e7302538%\''),
-(112, 'username', '2017-03-21 16:21:30', 'edit', NULL, '::1', 'admin', 'UPDATE username  set LastLogin = \'2017-03-21 04:21:30\'  WHERE UserName = \'admin\' and Password like \'772b0c2974cfb52801d48d79a44131e2e7302538%\''),
-(113, 'username', '2019-04-26 11:51:39', 'edit', NULL, '::1', 'admin', 'UPDATE username  set LastLogin = \'2019-04-26 11:51:39\'  WHERE UserName = \'admin\' and Password like \'772b0c2974cfb52801d48d79a44131e2e7302538%\''),
-(114, 'username', '2019-04-30 14:59:43', 'edit', NULL, '::1', 'admin', 'UPDATE username  set LastLogin = \'2019-04-30 02:59:43\'  WHERE UserName = \'admin\' and Password like \'772b0c2974cfb52801d48d79a44131e2e7302538%\''),
-(115, 'username', '2019-04-30 15:03:11', 'edit', NULL, '::1', 'admin', 'UPDATE username  set LastLogin = \'2019-04-30 03:03:11\'  WHERE UserName = \'admin\' and Password like \'772b0c2974cfb52801d48d79a44131e2e7302538%\'');
+(112, 'username', '2017-03-21 16:21:30', 'edit', NULL, '::1', 'admin', 'UPDATE username  set LastLogin = \'2017-03-21 04:21:30\'  WHERE UserName = \'admin\' and Password like \'772b0c2974cfb52801d48d79a44131e2e7302538%\'');
 
 -- --------------------------------------------------------
 
@@ -461,7 +456,7 @@ CREATE TABLE `username` (
 --
 
 INSERT INTO `username` (`UserName`, `Password`, `FullName`, `Stat`, `LastLogin`, `UserName_Target`, `Foto`, `Email`) VALUES
-('admin', '772b0c2974cfb52801d48d79a44131e2e73025380005', 'Admin BPN Sumedang', '', '2019-04-30 03:03:11', '', './uploaded/profile/admin.jpg', ''),
+('admin', '772b0c2974cfb52801d48d79a44131e2e73025380005', 'sedotcode.blogspot.com', '', '2017-03-21 04:21:30', '', './uploaded/profile/admin.jpg', ''),
 ('director', 'f959c4c054adcd234433daaf5ae79b0d806028780005', 'director', '', '0000-00-00 00:00:00', '196012031989031000', '', ''),
 ('entry-pegawai', 'dd7492a2e62b62449e99bb9137d5bcb2fc3fe6550002', 'entry-pegawai', '', '0000-00-00 00:00:00', '196701271995022000', '', ''),
 ('entry-sppd', '92ce050ad171f6c57e383dcc0ac2b56fff99001e0001', 'entry-sppd', '', '0000-00-00 00:00:00', '196003271986032000', '', ''),
@@ -555,32 +550,26 @@ ALTER TABLE `username_level`
 --
 ALTER TABLE `pegawai`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
-
 --
 -- AUTO_INCREMENT for table `sc_config`
 --
 ALTER TABLE `sc_config`
   MODIFY `Id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
 --
 -- AUTO_INCREMENT for table `sc_config_log`
 --
 ALTER TABLE `sc_config_log`
-  MODIFY `Id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
-
+  MODIFY `Id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
 --
 -- AUTO_INCREMENT for table `sc_master`
 --
 ALTER TABLE `sc_master`
   MODIFY `Id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
-
 --
 -- AUTO_INCREMENT for table `sppd`
 --
 ALTER TABLE `sppd`
   MODIFY `id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
